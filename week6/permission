@@ -1,0 +1,16 @@
+#!/bin/bash
+file="hello.txt"
+if [ -r "$file" ] && [ -w "$file" ] && [ -x "$file" ]; then
+        echo "$file has read,write and execute permissions."
+else
+        echo "$file does not have all the required permissions."
+fi
+if [ ! -r "$FILE" ]; then
+        echo "Missing read permission."
+    fi
+    if [ ! -w "$FILE" ]; then
+        echo "Missing write permission."
+    fi
+    if [ ! -x "$FILE" ]; then
+        echo "Missing execute permission."
+    fi
