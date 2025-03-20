@@ -1,0 +1,7 @@
+#!/bin/bash
+file="krishna"
+if [ -d "$file" ];then
+        echo "$file is a directory."
+else
+        echo "$file is not a directory."
+fi
